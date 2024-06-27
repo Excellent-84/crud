@@ -2,7 +2,8 @@
 
 ### Описание проекта:
 
-CRUD по взаимодействию с пользователями и [реляционной базой данных PostgreSQL.](https://github.com/Excellent-84/crud/data/pg-data.js)
+CRUD по взаимодействию с пользователями и реляционной базой данных PostgreSQL.
+
 [Файл, где в качестве базы данных используется массив.](https://github.com/Excellent-84/crud/data/data.js)
 
 

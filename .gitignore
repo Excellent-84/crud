@@ -138,3 +138,4 @@ static/
 media/
 .dockerignore.dockerignore
 db.sqlite3.bak
+.gitignore
