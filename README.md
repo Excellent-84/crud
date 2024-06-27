@@ -4,11 +4,11 @@
 
 CRUD по взаимодействию с пользователями и реляционной базой данных PostgreSQL.
 
-[Файл, где в качестве базы данных используется массив.](https://github.com/Excellent-84/crud/data/data.js)
+[Файл, где в качестве базы данных используется массив.](https://github.com/Excellent-84/crud/blob/master/data/data.js)
 
 
 ### Стек технологий:
-<img src="https://img.shields.io/badge/nodedotjs-FFFFFF?style=for-the-badge&logo=nodedotjs&logoColor=5FA04E"/><img src="https://img.shields.io/badge/PostgreSQL-FFFFFF?style=for-the-badge&logo=PostgreSQL&logoColor=4169E1"/>
+<img src="https://img.shields.io/badge/node.js-FFFFFF?style=for-the-badge&logo=node.js&logoColor=5FA04E"/><img src="https://img.shields.io/badge/PostgreSQL-FFFFFF?style=for-the-badge&logo=PostgreSQL&logoColor=4169E1"/>
 
 ### Как запустить проект:
 
