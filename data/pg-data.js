@@ -1,17 +1,19 @@
+require('dotenv').config();
+
 const { Pool } = require('pg');
 
 const pool = new Pool({
-  user: 'postgres',
-  host: 'localhost',
-  database: 'crud_db',
-  password: 'postgres',
-  port: 5432
+  user: process.env.DB_USER,
+  host: process.env.DB_HOST,
+  database: process.env.DB_NAME,
+  password: process.env.DB_PASS,
+  port: process.env.DB_PORT
 });
 
 pool.query(
   `CREATE TABLE IF NOT EXISTS users (
     id SERIAL PRIMARY KEY,
-    name TEXT NOT NULL,
+    name VARCHAR(30) NOT NULL,
     age INTEGER NOT NULL
   )`,
   (err, result) => {
@@ -22,7 +24,6 @@ pool.query(
     }
   }
 );
-
 
 module.exports = {
 
@@ -41,7 +42,7 @@ module.exports = {
 
   async getUsers() {
     try {
-      const users = await pool.query('SELECT * FROM users');
+      const users = await pool.query('SELECT * FROM users ORDER BY id');
       return users.rows;
     } catch (err) {
       throw err;

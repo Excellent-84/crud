@@ -19,10 +19,9 @@ git clone https://github.com/Excellent-84/crud.git
 cd crud
 ```
 
-##### Установить библиотеку для PostgreSQL:
-
+##### Создать файл .env и указать необходимые токены по примеру .env.example:
 ```
-npm install pg
+touch .env
 ```
 
 ##### Запустить проект:
